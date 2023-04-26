@@ -8846,11 +8846,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\code\\gabilgg_cloning_codes\\forIsmet\\BackendProject_Qabil\\Eduhome\\Eduhome.csproj",
+      "projectUniqueName": "C:\\Users\\GabilGG\\Desktop\\backp\\Backend_Project\\BackendProject_Qabil\\Eduhome\\Eduhome.csproj",
       "projectName": "Eduhome",
-      "projectPath": "D:\\code\\gabilgg_cloning_codes\\forIsmet\\BackendProject_Qabil\\Eduhome\\Eduhome.csproj",
+      "projectPath": "C:\\Users\\GabilGG\\Desktop\\backp\\Backend_Project\\BackendProject_Qabil\\Eduhome\\Eduhome.csproj",
       "packagesPath": "C:\\Users\\GabilGG\\.nuget\\packages\\",
-      "outputPath": "D:\\code\\gabilgg_cloning_codes\\forIsmet\\BackendProject_Qabil\\Eduhome\\obj\\",
+      "outputPath": "C:\\Users\\GabilGG\\Desktop\\backp\\Backend_Project\\BackendProject_Qabil\\Eduhome\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\GabilGG\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8928,7 +8928,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
       }
     }
   }

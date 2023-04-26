@@ -25,10 +25,12 @@ namespace Eduhome.Areas.Manage.Controllers
         {
             DateTime dateNow = DateTime.Now;
             DateTime FirstDayOfMonth = new DateTime(dateNow.Year, dateNow.Month, 1);
-            double monthlyPrice = (double)_context.CourseJoins.Include(x=>x.Course).Where(x=>x.IsAccepting==true && FirstDayOfMonth<x.JoinAt && x.JoinAt<dateNow).Average(x => x.Course.Fee);
+            var mPrice = _context.CourseJoins.Include(x => x.Course).Where(x => x.IsAccepting == true && FirstDayOfMonth < x.JoinAt && x.JoinAt < dateNow).Average(x => x.Course.Fee);
+            double monthlyPrice = (double)(mPrice is double ? mPrice:0);
 
             DateTime FirstDayOfYear = new DateTime(dateNow.Year, 1, 1);
-            double yearlyPrice = (double)_context.CourseJoins.Include(x => x.Course).Where(x => x.IsAccepting == true && FirstDayOfYear < x.JoinAt && x.JoinAt < dateNow).Average(x => x.Course.Fee);
+            var yPrice = _context.CourseJoins.Include(x => x.Course).Where(x => x.IsAccepting == true && FirstDayOfYear < x.JoinAt && x.JoinAt < dateNow).Average(x => x.Course.Fee);
+            double yearlyPrice = (double)(yPrice is double ? yPrice : 0);
 
             int usersCount = _context.AppUsers.Where(x => x.IsAdmin == false).Count();
             int joinedUsersCount = _context.AppUsers.Include(x=>x.CourseJoins).Where(x => x.IsAdmin == false && x.CourseJoins.Any(x=>x.IsAccepting==true)).Count();
