@@ -564,9 +564,26 @@ textarea {
     border: 1px solid #fff;
     color: #fff;
 }
-.header-area {
-    background: transparent none repeat scroll 0 0;
+.sticky .one.mobile-menu.black-menu-icon a.meanmenu-reveal {
+    border: 1px solid #2C2B5EC1;
+    color: #2C2B5EC1;
 }
+
+    .sticky .one.mobile-menu.black-menu-icon a.meanmenu-reveal span {
+        background-color: #2C2B5EC1;
+    }
+    .sticky .one.mobile-menu.black-menu-icon a.meanmenu-reveal:hover {
+        border: 1px solid #2C2B5E;
+        color: #2C2B5E;
+    }
+
+        .sticky .one.mobile-menu.black-menu-icon a.meanmenu-reveal:hover span {
+            background-color: #2C2B5E;
+        }
+
+.header-area {
+            background: transparent none repeat scroll 0 0;
+        }
 .fixed {
   left: 0;
   position: absolute;
@@ -935,7 +952,7 @@ textarea {
     height: 100%;
     width: 36%;
 }
-.header-top::before {
+/*.header-top::before {
     background: #fff none repeat scroll 0 0;
     content: "";
     height: 105px;
@@ -945,22 +962,33 @@ textarea {
     transform: rotate(-45deg);
     width: 8px;
     z-index: 1;
-}
+}*/
 .header-top-right{position: relative}
-.header-top-right::after {
-  background: #2c2b5e none repeat scroll 0 0;
-  content: "";
-  height: 100px;
-  left: -17%!important;
-  position: absolute;
-  top: -38px;
-  transform: rotate(-45deg);
-  width: 60px;
-}
-.header-top-right ul li{
-    display: inline-block;
-    margin-right: 38px;
-}
+    .header-top-right .left-line {
+        background-color: transparent;
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        left: -35%;
+        overflow: hidden;
+        z-index: 35;
+    }
+        .header-top-right .left-line::after {
+            background: #2c2b5e none repeat scroll 0 0;
+            content: "";
+            height: 100%;
+            left: 1% !important;
+            position: absolute;
+            top: -25%;
+            transform: rotate(45deg);
+            width: 105%;
+            border-bottom: 8px solid white;
+        }
+        .header-top-right ul li {
+            display: inline-block;
+            margin-right: 38px;
+        }
 .header-top-right ul li:last-child{
     margin-right: 0px;
 }

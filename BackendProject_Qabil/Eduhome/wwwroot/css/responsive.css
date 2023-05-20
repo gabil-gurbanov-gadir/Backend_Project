@@ -9,16 +9,25 @@
     .header-top::before {right: 37.5%}
 }
 
+@media only screen and (min-width: 1420px)  {
+    .header-top-right .left-line {
+        left: -36% !important;
+    }
+}
+
 /* Laptop Device :1366px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
     .header-top::before {right: 38%}
     .header-top-right::after {left: -19%}
 
+    .header-top-right .left-line {
+        left: -40%;
+    }
 
 }
 
 /* Normal desktop :992px. */
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199.5px) {
     .header-area.two .main-menu nav > ul > li > a{font-size: 14px}
     .slide-content h3 {font-size: 40px}
     .slide-content h2 {font-size: 45px; line-height: 45px}
@@ -47,7 +56,7 @@
     .single-teacher-content h2 {font-size: 18px}
     .teacher-details-content {margin-top: 0px; margin-left: 0}
     .header-top::before {right: 32.5%}
-    .header-top::after {width: 30%}
+    .header-top::after {width: 40%}
     .header-top-right::after {left: -5%}
     .event-area.two .event-content h4 a {font-size: 13px}
     .event-area.two .event-content ul li {font-size: 11px; margin-right: 3px}
@@ -65,12 +74,39 @@
     .notice-left {height: 612px;}
     .footer-area.two .main-footer .col-md-3:last-child {padding-left: 0px}
     .single-widget.instagram a{margin-right: 3px; margin-bottom: 3px}
+    .header-top-right ul li {
+        margin-right: 25px;
+    }
+    .header-top-right .left-line{
+        left: -52%;
+    }
+        .header-top-right .left-line::after{
+            top: -15%;
+        }
+}
 
+
+@media only screen and (max-width: 991.5px) {
+
+    .header-top::after {
+        width: 45%
+    }
+
+    .header-top-right ul li {
+        margin-right: 10px;
+    }
+
+    .header-top-right .left-line {
+        left: -45%;
+    }
+        .header-top-right ul li a {
+            line-height: 0px;
+        }
 }
 
  
 /* Tablet desktop :768px. */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 992px) {
     .main-menu nav > ul > li > a {font-size: 12px; line-height: 80px; padding: 0 8px}
     .logo {padding: 20px 0 15px}
     .slide-content h3 {font-size: 40px}
@@ -105,7 +141,6 @@
     .sticky .main-menu > nav > ul > li > a {line-height: 58px}
     .search {top: 73px}
     .single-teacher-content h2 {font-size: 18px}
-    .header-top::after {width: 32%}
     .event-area.two .event-content {padding: 17px 0 18px}
     .event-area.two .event-img {margin-right: 35px}
     .service-area.two, .notice-area.two{padding-bottom: 0}
@@ -142,12 +177,17 @@
     .main-footer .col-sm-6:first-child, .main-footer .col-sm-6:nth-child(2){margin-bottom: 30px} 
     .footer-area.two.ins > .main-footer > .container > .row > [class*="col-"]:nth-child(even) {clear: both}
     .single-widget.instagram a.gap{margin-right: 15px}
+    
+
 }
 
  
 /* small mobile :320px. */
-@media (max-width: 767px) {
-    .one.mobile-menu a.meanmenu-reveal {margin-top: -55px}
+@media (max-width: 767.5px) {
+    .one.mobile-menu a.meanmenu-reveal {
+        margin-top: -55px
+    }
+
     .mean-container a.meanmenu-reveal {margin-top: -62px}
     .search-btn {top: 38px}
     .logo {padding: 35px 0 0px}
@@ -188,13 +228,17 @@
     .blog-sidebar.right{margin-left: 0;}
     .content-wrapper {margin-right: 48px}
     .content-wrapper.one {margin-right: 0px}
-    .sticky .mean-container a.meanmenu-reveal {margin-top: -49px; transform: all 0.6s ease 0s}
+    .sticky .mean-container a.meanmenu-reveal {margin-top: -49px; transition: all 0.6s ease 0s}
     .notice-area.two .notice-left {padding: 35px 35px 30px}
     .event-area.two .event-img {float: inherit; margin-right: 0px}
     .event-area.two .event-content {margin-left: 25px}
     .event-area.two .event-img img, .event-area.three .event-img img , .course-details-right {width: 100%}
     .sticky .content-wrapper {padding: 0; line-height: 0}
-    .sticky .mean-container a.meanmenu-reveal {margin-top: -44px; transform: all 0.6s ease 0s}
+    .sticky .mean-container a.meanmenu-reveal {margin-top: -44px; transition: all 0.6s ease 0s;}
+
+    .sticky .mean-container.one.mobile-menu.black-menu-icon a.meanmenu-reveal {
+        margin-top: 12px !important;
+    }
     .single-widget a.gap {margin-right: 15px}
     .header-area.two .mean-container a.meanmenu-reveal {margin-top: -68px}
     .single-tag a:nth-child(3){margin-right: 10px}
@@ -245,6 +289,20 @@
     .footer-area.three .footer-bottom.two p {padding-top: 15px; line-height: 20px}
     .footer-area.three .footer-bottom.two .footer-social ul{padding-top: 0px}
     
+        .header-top-right ul li a {
+            line-height: 0px;
+        }
+    .header-top-right .left-line{
+        display:none;
+    }
+    .profil-image{
+        top: 0 !important;
+    }
+    .header-top-right ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -275,5 +333,10 @@
     .slide-content h3 {padding-top: 40px}
     .sticky .logo{width: 80%}
     .single-widget.instagram {padding-right: 70px}
-    
+}
+
+@media only screen and (max-width: 480px) {
+    .mean-container a.meanmenu-reveal {
+        right: -50px;
+    }
 }
